@@ -7,12 +7,18 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import mean_squared_error, r2_score, accuracy_score
 import lightgbm as lgb
+import os
 
+# Get the current script directory
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Load the data
+data_file_path = os.path.join(script_dir, 'Cleaned Crime Dataset Bukkies.xlsx')
 # Reference the Excel file directly
-FILE_NAME = "Cleaned Crime Dataset Bukkies.xlsx"  # Ensure the correct file extension
+# Ensure the correct file extension
 
 # Load the dataset
-dataset = pd.read_excel(FILE_NAME)  # Load the dataset from the current directory
+dataset = pd.read_excel(data_file_path)  # Load the dataset from the current directory
 
 # Check the first few rows of the dataset to understand its structure
 print(dataset.head())
