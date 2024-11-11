@@ -1,0 +1,752 @@
+
+4m
+    lgb_regressor = lgb.LGBMRegressor(n_estimators=100, random_state=42)
+    lgb_regressor.fit(X_train, y_train)
+
+    # Make predictions
+    y_pred_lgb = lgb_regressor.predict(X_test)
+
+    # Evaluate the model
+    mse_lgb = mean_squared_error(y_test, y_pred_lgb)
+    results[target_column]['LightGBM Regression MSE'] = mse_lgb
+
+
+Iteration: 	1 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	2 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	3 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	4 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	5 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	6 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	7 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	8 / 100
+Confirmed: 	15
+Tentative: 	3
+Rejected: 	3
+Iteration: 	9 / 100
+Confirmed: 	15
+Tentative: 	3
+Rejected: 	3
+Iteration: 	10 / 100
+Confirmed: 	15
+Tentative: 	3
+Rejected: 	3
+Iteration: 	11 / 100
+Confirmed: 	15
+Tentative: 	3
+Rejected: 	3
+Iteration: 	12 / 100
+Confirmed: 	15
+Tentative: 	3
+Rejected: 	3
+Iteration: 	13 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	14 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	15 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	16 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	17 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	18 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	19 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	20 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	21 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	22 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	23 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	24 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	25 / 100
+Confirmed: 	15
+Tentative: 	2
+Rejected: 	4
+Iteration: 	26 / 100
+Confirmed: 	16
+Tentative: 	0
+Rejected: 	5
+
+
+BorutaPy finished running.
+
+Iteration: 	27 / 100
+Confirmed: 	16
+Tentative: 	0
+Rejected: 	5
+Selected Features for Diabetes_012:  ['HighBP', 'HighChol', 'CholCheck', 'BMI', 'Stroke', 'HeartDiseaseorAttack', 'PhysActivity', 'HvyAlcoholConsump', 'NoDocbcCost', 'GenHlth', 'MentHlth', 'PhysHlth', 'DiffWalk', 'Age', 'Education', 'Income']
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.031173 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 192
+[LightGBM] [Info] Number of data points in the train set: 202944, number of used features: 16
+[LightGBM] [Info] Start training from score 0.297545
+Iteration: 	1 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	2 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	3 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	4 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	5 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	6 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	7 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	8 / 100
+Confirmed: 	20
+Tentative: 	1
+Rejected: 	0
+Iteration: 	9 / 100
+Confirmed: 	20
+Tentative: 	0
+Rejected: 	1
+
+
+BorutaPy finished running.
+
+Iteration: 	10 / 100
+Confirmed: 	20
+Tentative: 	0
+Rejected: 	1
+Selected Features for HighBP:  ['Diabetes_012', 'HighChol', 'CholCheck', 'BMI', 'Smoker', 'Stroke', 'HeartDiseaseorAttack', 'PhysActivity', 'Fruits', 'Veggies', 'AnyHealthcare', 'NoDocbcCost', 'GenHlth', 'MentHlth', 'PhysHlth', 'DiffWalk', 'Sex', 'Age', 'Education', 'Income']
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.040296 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 201
+[LightGBM] [Info] Number of data points in the train set: 202944, number of used features: 20
+[LightGBM] [Info] Start training from score 0.428212
+Iteration: 	1 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	2 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	3 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	4 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	5 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	6 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	7 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	8 / 100
+Confirmed: 	19
+Tentative: 	2
+Rejected: 	0
+Iteration: 	9 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	10 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	11 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	12 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	13 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	14 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	15 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	16 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	17 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	18 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	19 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	20 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	21 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	22 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	23 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	24 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	25 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	26 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	27 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	28 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	29 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	30 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	31 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	32 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	33 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	34 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	35 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	36 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	37 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	38 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	39 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	40 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	41 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	42 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	43 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	44 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	45 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	46 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	47 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	48 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	49 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	50 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	51 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	52 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	53 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	54 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	55 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	56 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	57 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	58 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	59 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	60 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	61 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	62 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	63 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	64 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	65 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	66 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	67 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	68 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	69 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	70 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	71 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	72 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	73 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	74 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	75 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	76 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	77 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	78 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	79 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	80 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	81 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	82 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	83 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	84 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	85 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	86 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	87 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	88 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	89 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	90 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	91 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	92 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	93 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	94 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	95 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	96 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	97 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	98 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Iteration: 	99 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+
+
+BorutaPy finished running.
+
+Iteration: 	100 / 100
+Confirmed: 	19
+Tentative: 	1
+Rejected: 	1
+Selected Features for HighChol:  ['Diabetes_012', 'HighBP', 'CholCheck', 'BMI', 'Smoker', 'Stroke', 'HeartDiseaseorAttack', 'PhysActivity', 'Fruits', 'Veggies', 'AnyHealthcare', 'GenHlth', 'MentHlth', 'PhysHlth', 'DiffWalk', 'Sex', 'Age', 'Education', 'Income']
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.037496 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 199
+[LightGBM] [Info] Number of data points in the train set: 202944, number of used features: 19
+[LightGBM] [Info] Start training from score 0.423664
+Iteration: 	1 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	2 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	3 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	4 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	5 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	6 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	7 / 100
+Confirmed: 	0
+Tentative: 	21
+Rejected: 	0
+Iteration: 	8 / 100
+Confirmed: 	17
+Tentative: 	4
+Rejected: 	0
+Iteration: 	9 / 100
+Confirmed: 	17
+Tentative: 	3
+Rejected: 	1
+Iteration: 	10 / 100
+Confirmed: 	17
+Tentative: 	3
+Rejected: 	1
+Iteration: 	11 / 100
+Confirmed: 	17
+Tentative: 	3
+Rejected: 	1
+Iteration: 	12 / 100
+Confirmed: 	17
+Tentative: 	3
+Rejected: 	1
+Iteration: 	13 / 100
+Confirmed: 	17
+Tentative: 	3
+Rejected: 	1
+Iteration: 	14 / 100
+Confirmed: 	17
+Tentative: 	3
+Rejected: 	1
+Iteration: 	15 / 100
+Confirmed: 	17
+Tentative: 	3
+Rejected: 	1
+Iteration: 	16 / 100
+Confirmed: 	17
+Tentative: 	2
+Rejected: 	2
+Iteration: 	17 / 100
+Confirmed: 	17
+Tentative: 	2
+Rejected: 	2
+Iteration: 	18 / 100
+Confirmed: 	17
+Tentative: 	2
+Rejected: 	2
+Iteration: 	19 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	20 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	21 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	22 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	23 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	24 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	25 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	26 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	27 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	28 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	29 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	30 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	31 / 100
+Confirmed: 	17
+Tentative: 	1
+Rejected: 	3
+Iteration: 	32 / 100
+Confirmed: 	17
+Tentative: 	0
+Rejected: 	4
+
+
+BorutaPy finished running.
+
+Iteration: 	33 / 100
+Confirmed: 	17
+Tentative: 	0
+Rejected: 	4
+Selected Features for Stroke:  ['Diabetes_012', 'HighBP', 'HighChol', 'CholCheck', 'BMI', 'Smoker', 'HeartDiseaseorAttack', 'PhysActivity', 'Veggies', 'NoDocbcCost', 'GenHlth', 'MentHlth', 'PhysHlth', 'DiffWalk', 'Age', 'Education', 'Income']
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.034017 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 195
+[LightGBM] [Info] Number of data points in the train set: 202944, number of used features: 17
+[LightGBM] [Info] Start training from score 0.040578
+Results for Diabetes_012:
+  Random Forest Regression MSE: 0.4404436422577429
+  LightGBM Regression MSE: 0.3831458409585052
+Results for HighBP:
+  Random Forest Regression MSE: 0.2006852235610711
+  Logistic Regression Accuracy: 0.7274321980447809
+  LightGBM Regression MSE: 0.1777558299545653
+Results for HighChol:
+  Random Forest Regression MSE: 0.22503049540141704
+  Logistic Regression Accuracy: 0.6758120466729738
+  LightGBM Regression MSE: 0.2012082982230705
+Results for Stroke:
+  Random Forest Regression MSE: 0.039815372894014205
+  Logistic Regression Accuracy: 0.959259697256386
+  LightGBM Regression MSE: 0.035742116563911824
